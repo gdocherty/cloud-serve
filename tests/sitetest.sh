@@ -5,5 +5,5 @@ if curl http://serve:5000 | grep site; then
   exit 0
 else
   echo "Site does not exist.\nSite test fails.\n"
-  exit 0
+  exit 1
 fi
